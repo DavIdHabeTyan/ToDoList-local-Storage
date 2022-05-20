@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+    background-color: #333341;
+}
+
+h1{
+    text-align: center;
+    color: #418525;
+}
+
+h2{
+    padding: 10px;
+    color: #071104;
+}
+.flex_Wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.add_todo_wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    min-height: 40px;
+    align-items: center;
+    background-color: #418525;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input_wrapper input{
+    width: 100%;
+    height: 25px;
+}
+
+.button_wrapper{
+    width: 20%;
+    display: flex;
+
+    justify-content: flex-end;
+}
+
+.button_wrapper button{
+    width: 80%;
+    background-color: #054d05;
+    color: white;
+    outline: none ;
+    border: none;
+    height: 25px;
+    cursor: pointer;
+}
+
+.todo_item{
+    display: flex;
+    width: 500px;
+    min-height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: orange;
+}
+
+.todo_item.checked{
+    background-color: #656569;
+    opacity: 0.5;
+}
+
+.todo_item.delition{
+    animation: opacity 1s ease-in-out;
+}
+
+.description{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    color: floralwhite;
+}
+.btn_complete{
+    margin: 5px;
+}
+
+.buttons{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.buttons input{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.buttons button{
+    outline: none;
+    border: none;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    height: 25px;
+    border-radius: 5px;
+}
+
+@keyframes opacity {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+#add_task_btn:hover{
+    box-shadow: 1px 1px 5px #75e345;
+    color: #75e345;
+    font-size: 15px;
+}
+
+#add_task_btn:active{
+    color: #dcc640;
+    box-shadow: 1px 1px 5px #dcc640;
+    font-size: 16px;
+}
+
+.btn_delete:hover{
+    box-shadow: 1px 1px 5px #ad0303;
+    color: #110d0d;
+}
